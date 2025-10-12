@@ -192,9 +192,19 @@
   </header>
 
   <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="SpotiDown.App - Nothing - Bruno Major.mp3" type="audio/mpeg">
-  </audio>
+  <audio id="bgm" loop>
+  <source src="SpotiDown.App - Nothing - Bruno Major.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Mulai musik setelah user klik di halaman pertama kali
+  document.addEventListener("click", function startMusic() {
+    const bgm = document.getElementById("bgm");
+    bgm.play().catch(()=>{});
+    document.removeEventListener("click", startMusic);
+  });
+</script>
+
 
   <section class="hero">
     <div class="hero-text">
