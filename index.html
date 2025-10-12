@@ -1,3 +1,4 @@
+<!-- Ferdinand Putra Bone — Portofolio dengan Tombol Play Musik -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -28,7 +29,6 @@
       overflow-x:hidden;
     }
 
-    /* Navbar */
     header{
       position:sticky;top:0;
       background:var(--bg);
@@ -37,149 +37,63 @@
       z-index:100;
       box-shadow:0 1px 6px rgba(0,0,0,0.05);
     }
-    .logo{
-      font-weight:700;
-      font-size:18px;
-      color:var(--primary);
-      letter-spacing:1px;
-    }
-    nav a{
-      text-decoration:none;
-      margin-left:20px;
-      font-weight:500;
-      color:#334155;
-      transition:.3s;
-    }
+    .logo{font-weight:700;font-size:18px;color:var(--primary);letter-spacing:1px;}
+    nav a{text-decoration:none;margin-left:20px;font-weight:500;color:#334155;transition:.3s;}
     nav a:hover{color:var(--primary);}
 
-    /* Hero */
-    .hero{
-      display:flex;align-items:center;justify-content:space-between;
-      flex-wrap:wrap;
-      padding:60px 40px;
-      gap:40px;
-      animation:fadeIn 1.5s ease;
-    }
-    .hero-text{
-      flex:1 1 400px;
-    }
-    .hero-text h1{
-      font-size:36px;
-      color:#1e3a8a;
-      margin-bottom:10px;
-    }
-    .hero-text p{
-      color:#475569;
-      font-size:16px;
-      max-width:500px;
-    }
-    .hero-btn{
-      margin-top:20px;
-      display:flex;gap:12px;
-    }
-    .hero-btn a{
-      text-decoration:none;
-      padding:10px 18px;
-      border-radius:10px;
-      font-weight:600;
-      font-size:14px;
-      transition:.3s ease;
-    }
-    .btn-primary{
-      background:var(--primary);
-      color:white;
-      box-shadow:var(--shadow-light);
-    }
+    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:60px 40px;gap:40px;}
+    .hero-text{flex:1 1 400px;}
+    .hero-text h1{font-size:36px;color:#1e3a8a;margin-bottom:10px;}
+    .hero-text p{color:#475569;font-size:16px;max-width:500px;}
+    .hero-btn{margin-top:20px;display:flex;gap:12px;}
+    .hero-btn a{text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;transition:.3s ease;}
+    .btn-primary{background:var(--primary);color:white;box-shadow:var(--shadow-light);}
     .btn-primary:hover{transform:translateY(-3px);}
-    .btn-outline{
-      border:2px solid var(--primary);
-      color:var(--primary);
-    }
+    .btn-outline{border:2px solid var(--primary);color:var(--primary);}
     .btn-outline:hover{background:var(--primary);color:white;}
+    .hero img{width:260px;height:260px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow-light);}
 
-    .hero img{
-      width:260px;height:260px;border-radius:50%;
-      object-fit:cover;
-      box-shadow:var(--shadow-light);
-    }
-
-    /* Section */
-    section{
-      padding:50px 40px;
-      animation:fadeUp 1s ease both;
-    }
-    section h2{
-      text-align:center;
-      color:var(--primary);
-      font-size:22px;
-      margin-bottom:30px;
-    }
-
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:22px;
-      box-shadow:var(--shadow-inset);
-      transition:all .4s ease;
-    }
-    .card:hover{
-      transform:translateY(-5px);
-      box-shadow:6px 6px 18px rgba(0,0,0,0.08);
-    }
-
-    /* Profil */
+    section{padding:50px 40px;}
+    section h2{text-align:center;color:var(--primary);font-size:22px;margin-bottom:30px;}
+    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-inset);transition:all .4s ease;}
+    .card:hover{transform:translateY(-5px);box-shadow:6px 6px 18px rgba(0,0,0,0.08);}
     .profil p{max-width:700px;margin:auto;text-align:center;color:#475569;}
-
-    /* Ekstra */
     .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
     .small-card h3{color:#1e3a8a;margin-bottom:8px;}
     .small-card p{color:#475569;font-size:15px;}
-
-    /* Galeri */
-    .galeri-grid{
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .galeri-grid img{
-      width:100%;height:180px;object-fit:cover;border-radius:14px;
-      box-shadow:var(--shadow-light);
-      transition:transform .4s ease,filter .4s;
-    }
+    .galeri-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+    .galeri-grid img{width:100%;height:180px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow-light);transition:transform .4s ease,filter .4s;}
     .galeri-grid img:hover{transform:scale(1.05);filter:brightness(1.1);}
-
-    /* Kontak */
-    .contact-row{
-      display:flex;gap:18px;flex-wrap:wrap;justify-content:center;
-    }
-    .contact-item{
-      text-decoration:none;
-      color:#0f172a;
-      display:flex;align-items:center;gap:12px;
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:12px 18px;
-      box-shadow:var(--shadow-inset);
-      transition:.3s;
-    }
+    .contact-row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;}
+    .contact-item{text-decoration:none;color:#0f172a;display:flex;align-items:center;gap:12px;background:var(--card);border-radius:var(--radius);padding:12px 18px;box-shadow:var(--shadow-inset);transition:.3s;}
     .contact-item:hover{transform:scale(1.05);box-shadow:6px 6px 14px rgba(0,0,0,0.08);}
-    .icon{
-      width:46px;height:46px;border-radius:12px;
-      display:grid;place-items:center;
-      background:var(--primary);color:white;font-size:18px;
-    }
+    .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--primary);color:white;font-size:18px;}
+    footer{text-align:center;padding:20px;color:#64748b;font-size:13px;}
 
-    footer{
-      text-align:center;
-      padding:20px;
-      color:#64748b;
-      font-size:13px;
+    /* Tombol musik */
+    #playMusicBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-light);
+      transition: 0.3s;
+      z-index: 200;
     }
-
-    @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:none;}}
+    #playMusicBtn:hover {
+      transform: scale(1.05);
+      background: #1e40af;
+    }
   </style>
 </head>
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header>
     <div class="logo">Ferdinand</div>
     <nav>
@@ -191,6 +105,7 @@
     </nav>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-text">
       <h1>Halo, Saya Ferdinand Putra Bone 👋</h1>
@@ -203,6 +118,7 @@
     <img src="WhatsApp Image 2025-10-07 at 21.03.15.jpeg" alt="Foto Ferdinand">
   </section>
 
+  <!-- ===== PROFIL ===== -->
   <section id="profil" class="profil">
     <h2>Profil Singkat</h2>
     <div class="card">
@@ -210,24 +126,17 @@
     </div>
   </section>
 
+  <!-- ===== EKSTRA ===== -->
   <section id="ekstra">
     <h2>Ekstrakurikuler & Organisasi</h2>
     <div class="grid-3">
-      <div class="card small-card">
-        <h3>🏸 Badminton</h3>
-        <p>Aktif dalam latihan dan pertandingan antar sekolah, melatih konsistensi dan sportivitas.</p>
-      </div>
-      <div class="card small-card">
-        <h3>⛪ Rohkris</h3>
-        <p>Berper sebagai sekretaris kegiatan Rohani Kristen, mengatur agenda dan koordinasi acara.</p>
-      </div>
-      <div class="card small-card">
-        <h3>🎯 OSIS</h3>
-        <p>Membantu mengelola acara dan kegiatan sekolah dengan semangat kerja tim yang tinggi.</p>
-      </div>
+      <div class="card small-card"><h3>🏸 Badminton</h3><p>Aktif dalam latihan dan pertandingan antar sekolah.</p></div>
+      <div class="card small-card"><h3>⛪ Rohkris</h3><p>Sekretaris kegiatan Rohani Kristen, mengatur agenda dan acara.</p></div>
+      <div class="card small-card"><h3>🎯 OSIS</h3><p>Membantu mengelola kegiatan sekolah dengan semangat kerja tim.</p></div>
     </div>
   </section>
 
+  <!-- ===== BERITA ===== -->
   <section id="berita">
     <h2>Berita & Prestasi</h2>
     <div class="card">
@@ -238,6 +147,7 @@
     </div>
   </section>
 
+  <!-- ===== GALERI ===== -->
   <section id="galeri">
     <h2>Galeri</h2>
     <div class="galeri-grid">
@@ -247,6 +157,7 @@
     </div>
   </section>
 
+  <!-- ===== KONTAK ===== -->
   <section id="kontak">
     <h2>Kontak</h2>
     <div class="contact-row">
@@ -267,17 +178,28 @@
 
   <footer>&copy; 2025 Ferdinand Putra Bone</footer>
 
-  <!-- Musik Autoplay (Nothing - Bruno Major) -->
+  <!-- ===== Musik ===== -->
   <audio id="bgm" loop>
     <source src="SpotiDown.App - Nothing - Bruno Major.mp3" type="audio/mpeg">
   </audio>
 
+  <button id="playMusicBtn">🎵 Putar Musik</button>
+
   <script>
-    // Mulai musik setelah user interaksi pertama
-    document.addEventListener("click", function startMusic() {
-      const bgm = document.getElementById("bgm");
-      bgm.play().catch(()=>{});
-      document.removeEventListener("click", startMusic);
+    const btn = document.getElementById("playMusicBtn");
+    const bgm = document.getElementById("bgm");
+    btn.addEventListener("click", () => {
+      bgm.play();
+      btn.textContent = "⏸️ Jeda Musik";
+      btn.onclick = () => {
+        if (bgm.paused) {
+          bgm.play();
+          btn.textContent = "⏸️ Jeda Musik";
+        } else {
+          bgm.pause();
+          btn.textContent = "🎵 Putar Musik";
+        }
+      };
     });
   </script>
 </body>
